@@ -1,5 +1,7 @@
 package models;
 
+import java.util.ArrayList;
+
 public class Inmate {
     public enum Gender {
         MALE,
@@ -24,6 +26,7 @@ public class Inmate {
     private String date;
     private String bookingNumber;
     private String incidentTag;
+    private ArrayList<Charge> charges;
 
     public Inmate() {
 
@@ -40,6 +43,7 @@ public class Inmate {
         this.date = date;
         this.bookingNumber = bookingNumber;
         this.incidentTag = incidentTag;
+        this.charges = new ArrayList<>();
     }
 
     public String getFirstName() {
@@ -122,6 +126,14 @@ public class Inmate {
         this.incidentTag = incidentTag;
     }
 
+    public ArrayList<Charge> getCharges() {
+        return this.charges;
+    }
+
+    public void addCharge(Charge charge) {
+        this.charges.add(charge);
+    }
+
     @Override
     public String toString() {
         return "Inmate{" +
@@ -135,6 +147,7 @@ public class Inmate {
                 ", date='" + date + '\'' +
                 ", bookingNumber='" + bookingNumber + '\'' +
                 ", incidentTag='" + incidentTag + '\'' +
+                ", charges=" + charges +
                 '}';
     }
 }

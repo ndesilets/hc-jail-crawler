@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd86442f-c960-4683-9a5f-d9cfa5bb8673" name="Default" comment="" />
+    <list default="true" id="fd86442f-c960-4683-9a5f-d9cfa5bb8673" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/HJCParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HJCParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Charge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Charge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Inmate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Inmate.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -31,8 +35,8 @@
           <file leaf-file-name="HJCParser.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/HJCParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3095">
-                  <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+                <state relative-caret-position="196">
+                  <caret line="280" column="44" lean-forward="true" selection-start-line="280" selection-start-column="44" selection-end-line="280" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -44,11 +48,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Inmate.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Inmate.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Inmate.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2125">
-                  <caret line="125" column="18" selection-start-line="124" selection-end-line="124" selection-end-column="4" />
+                <state relative-caret-position="2259">
+                  <caret line="150" column="20" lean-forward="true" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
                   <folding>
                     <element signature="e#1099#1100#0" expanded="true" />
                     <element signature="e#1131#1132#0" expanded="true" />
@@ -90,45 +94,33 @@
                     <element signature="e#2463#2464#0" expanded="true" />
                     <element signature="e#2517#2518#0" expanded="true" />
                     <element signature="e#2563#2564#0" expanded="true" />
+                    <element signature="e#2679#2680#0" expanded="true" />
+                    <element signature="e#2714#2715#0" expanded="true" />
+                    <element signature="e#2763#2764#0" expanded="true" />
+                    <element signature="e#2782#2783#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Charge.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Charge.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Charge.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="816">
+                  <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
                   <folding>
-                    <element signature="e#692#693#0" expanded="true" />
-                    <element signature="e#729#730#0" expanded="true" />
-                    <element signature="e#786#787#0" expanded="true" />
-                    <element signature="e#838#839#0" expanded="true" />
-                    <element signature="e#875#876#0" expanded="true" />
-                    <element signature="e#911#912#0" expanded="true" />
-                    <element signature="e#966#967#0" expanded="true" />
-                    <element signature="e#1016#1017#0" expanded="true" />
-                    <element signature="e#1047#1048#0" expanded="true" />
-                    <element signature="e#1074#1075#0" expanded="true" />
-                    <element signature="e#1114#1115#0" expanded="true" />
-                    <element signature="e#1146#1147#0" expanded="true" />
-                    <element signature="e#1175#1176#0" expanded="true" />
-                    <element signature="e#1202#1203#0" expanded="true" />
-                    <element signature="e#1240#1241#0" expanded="true" />
-                    <element signature="e#1272#1273#0" expanded="true" />
-                    <element signature="e#1304#1305#0" expanded="true" />
-                    <element signature="e#1334#1335#0" expanded="true" />
-                    <element signature="e#1378#1379#0" expanded="true" />
-                    <element signature="e#1416#1417#0" expanded="true" />
-                    <element signature="e#1452#1453#0" expanded="true" />
-                    <element signature="e#1485#1486#0" expanded="true" />
-                    <element signature="e#1536#1537#0" expanded="true" />
-                    <element signature="e#1580#1581#0" expanded="true" />
-                    <element signature="e#1618#1619#0" expanded="true" />
-                    <element signature="e#1652#1653#0" expanded="true" />
-                    <element signature="e#1706#1707#0" expanded="true" />
-                    <element signature="e#1752#1753#0" expanded="true" />
+                    <element signature="e#354#355#0" expanded="true" />
+                    <element signature="e#384#385#0" expanded="true" />
+                    <element signature="e#430#431#0" expanded="true" />
+                    <element signature="e#468#469#0" expanded="true" />
+                    <element signature="e#499#500#0" expanded="true" />
+                    <element signature="e#526#527#0" expanded="true" />
+                    <element signature="e#566#567#0" expanded="true" />
+                    <element signature="e#598#599#0" expanded="true" />
+                    <element signature="e#634#635#0" expanded="true" />
+                    <element signature="e#667#668#0" expanded="true" />
+                    <element signature="e#718#719#0" expanded="true" />
+                    <element signature="e#762#763#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -144,6 +136,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -539,9 +534,9 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/UnsupportedLineStateException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Charge.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/InvalidInmateLine.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/InvalidChargeLineException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Charge.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Inmate.java" />
         <option value="$PROJECT_DIR$/src/main/java/HJCParser.java" />
       </list>
@@ -552,6 +547,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -607,6 +603,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunDashboard">
@@ -711,15 +708,17 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49947917" weight="0.32912722" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4984375" weight="0.32912722" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.32912722" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18072917" />
       <window_info anchor="bottom" id="Build" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" sideWeight="0.49947917" visible="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -728,7 +727,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -749,43 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Charge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,8 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Inmate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="18" selection-start-line="124" selection-end-line="124" selection-end-column="4" />
+        <state relative-caret-position="2259">
+          <caret line="150" column="20" lean-forward="true" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
           <folding>
             <element signature="e#1099#1100#0" expanded="true" />
             <element signature="e#1131#1132#0" expanded="true" />
@@ -867,14 +828,39 @@
             <element signature="e#2463#2464#0" expanded="true" />
             <element signature="e#2517#2518#0" expanded="true" />
             <element signature="e#2563#2564#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Charge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HJCParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3095">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="196">
+          <caret line="280" column="44" lean-forward="true" selection-start-line="280" selection-start-column="44" selection-end-line="280" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

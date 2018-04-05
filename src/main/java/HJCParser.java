@@ -6,7 +6,6 @@ import models.Inmate;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class HJCParser {
@@ -33,7 +32,7 @@ public class HJCParser {
      * @param input Potential suffix
      * @return t/f
      */
-    private static boolean isCommonSuffix(String input) {
+    private static boolean isCommonSuffix(final String input) {
         final String[] COMMON_SUFFIXES = {
                 "II", "III", "IV", "JR.", "SR."
         };
@@ -48,7 +47,7 @@ public class HJCParser {
     }
 
     /**
-     * Parse information from line containing inmate information
+     * Extract information from line containing inmate information
      * POSSIBLE LINE FORMATS:
      * 7 - NO_OPT_ATTR_SIZE
      * LAST, 	FIRST 			GENDER 	RACE 	DATE 	BOOKING INCIDENT
@@ -68,8 +67,8 @@ public class HJCParser {
      *
      * @param line Inmate line
      */
-    private static Inmate parseInmateLine(String line) throws InvalidInmateLineException {
-        Inmate inmate = new Inmate();
+    private static Inmate parseInmateLine(final String line) throws InvalidInmateLineException {
+        Inmate inmate;
         String firstName;
         String middleName = null; // TODO @Nullable?
         String lastName;
@@ -152,7 +151,7 @@ public class HJCParser {
                 } else { // assume middle name
                     middleName = attrs[2];
 
-                    if(attrs[3].contains("/")) { // next attr is dob
+                    if (attrs[3].contains("/")) { // next attr is dob
                         dob = attrs[3];
                     } else { // next attr is suffix
                         suffix = attrs[3];
@@ -183,20 +182,51 @@ public class HJCParser {
                 incidentTag
         );
 
-        System.out.println(inmate.toString());
+        //System.out.println(inmate.toString());
 
         return inmate;
     }
 
     /**
-     * Parse information from line containing charge information
+     * Extract information from line containing charge information
      *
+     * EXAMPLE:
+     * 0    1           2   3       ...     n
+     *      STATUTE	    -   NAME 	?...    BAIL
      * @param line Charge line
      */
-    private static Charge parseChargeLine(String line) {
-        Charge charge = new Charge();
+    private static Charge parseChargeLine(final String line) {
+        Charge charge;
+        String statute;
+        String name;
+        Float bailAmount;
+        String[] attrs;
+        int numAttrs;
 
         //System.out.println(line);
+        attrs = line.split("[ ]+");
+        numAttrs = attrs.length;
+
+        statute = attrs[1];
+        name = attrs[3];
+        bailAmount = Float.valueOf(
+                attrs[numAttrs - 1]
+                    .replace("$", "")
+                    .replace(",", ""));
+
+        // If name has spaces
+        if (numAttrs > 5) {
+            // Build the rest of the charge name
+            for (int i = 4; i < numAttrs - 1; i++) {
+                name += " " + attrs[i];
+            }
+        }
+
+        charge = new Charge(
+                statute,
+                name,
+                bailAmount
+        );
 
         return charge;
     }
@@ -209,8 +239,8 @@ public class HJCParser {
      * @return LineState
      * @throws UnsupportedLineStateException bad line
      */
-    private static LineState determineLineState(String line) throws UnsupportedLineStateException {
-        if (line.isEmpty() || line.equals('\n')) {
+    private static LineState determineLineState(final String line) throws UnsupportedLineStateException {
+        if (line.isEmpty() || line.contains("***,***.**")) {
             return LineState.AT_EMPTY_LINE;
         } else if (line.startsWith(START_OF_PAGE_MARKER)) {
             return LineState.AT_HEADER;
@@ -230,7 +260,7 @@ public class HJCParser {
      * @return File as array
      * @throws IOException e
      */
-    private static ArrayList<String> readFileAsArray(String filename) throws IOException {
+    private static ArrayList<String> readFileAsArray(final String filename) throws IOException {
         ArrayList<String> array = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
@@ -250,6 +280,8 @@ public class HJCParser {
      */
     public static void main(String[] args) {
         ArrayList<String> lines = null;
+        ArrayList<Inmate> inmates = new ArrayList<>();
+        Inmate currentInmate = null;
 
         // Get file
         try {
@@ -284,19 +316,31 @@ public class HJCParser {
                     i += FOOTER_OFFSET - 1; // Skip ahead
                     break;
                 case AT_INMATE:
+                    if (currentInmate != null) {
+                        inmates.add(currentInmate);
+                    }
+
                     try {
-                        parseInmateLine(line);
+                        currentInmate = parseInmateLine(line);
                     } catch (InvalidInmateLineException e) {
+                        currentInmate = null;
                         e.printStackTrace();
                     }
+
                     break;
                 case AT_CHARGE:
-                    parseChargeLine(line);
+                    if (currentInmate != null) {
+                        Charge charge = parseChargeLine(line);
+                        currentInmate.addCharge(charge);
+                    }
+
                     break;
                 default:
                     System.out.println("Unsupported line state");
                     System.exit(1);
             }
         }
+
+        System.out.println(inmates.toString());
     }
 }
