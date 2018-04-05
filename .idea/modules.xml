@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hc-jail-crawler.iml" filepath="$PROJECT_DIR$/.idea/modules/hc-jail-crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hc-jail-crawler_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hc-jail-crawler_main.iml" group="hc-jail-crawler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hc-jail-crawler_test.iml" filepath="$PROJECT_DIR$/.idea/modules/hc-jail-crawler_test.iml" group="hc-jail-crawler" />
+    </modules>
+  </component>
+</project>
