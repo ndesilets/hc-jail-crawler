@@ -88,7 +88,7 @@ public class HJCParser {
 
         // Always the same regardless of number of attributes
 
-        lastName = attrs[0].substring(0, attrs[0].length() - 1); // "Ignore trailing ,"
+        lastName = attrs[0].substring(0, attrs[0 ].length() - 1); // "Ignore trailing ,"
         firstName = attrs[1];
         switch (attrs[numAttrs - 5]) {
             case "M":
